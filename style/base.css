@@ -18,11 +18,11 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding-right: 10%;
-    height: 121px;
+    height: 100px;
 }
 
 .logo{
-    height: 218%;
+    height: 60%;
 }
 
 nav ul li{
