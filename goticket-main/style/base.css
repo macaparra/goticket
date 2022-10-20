@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+body{
+    font-family: 'Public Sans', sans-serif;
+}
+
+nav{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.102);
+    margin-top: 20px;
+}
+
+.logo{
+    width: 199px;
+    margin-top: -22px;
+}
+
+.nav-text{
+    font-size: 26px;
+    margin-top: -8px;
+    margin-left: -2px;
+    margin-right: 78px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-text:hover {
+    color: #3be16e;
+}
+
+#title{
+    font-size: 68px;
+}
+
+.dynamic-text{
+    color: #3BE16E;
+}
+
+.static-text{
+    color: white;
+    font-size: 20px;
+}
+
+.boton{
+    margin-right: 14px;
+    border-radius: 13px;
+    margin-top: -4px;
+    margin-bottom: 16px;
+    margin-left: -2px;
+}
+
+button{
+    border: none;
+    background:#e94598;
+    background-image: linear-gradient(0deg, #e94598 12%, #b380df 68%);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.hero__wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+
+.dropdown-toggle {
+    color:white;
+    text-decoration: none;
+    font-size: 26px;
+    margin-right: 52px;
+}
+
+.dropdown-toggle:hover {
+    color: #3be16e;
+}
+
+

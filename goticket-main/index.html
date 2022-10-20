@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoTicket</title>
+    <link href="assets/img/ticket.png" rel="icon" />
+    <link href="./style/base.css" rel="stylesheet" />
+    <link href="./style/normalize.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+      .banner-image {
+        background-image: url('./assets/img/banner01.jpg');
+        background-size: cover;
+      }
+    </style>
+</head>
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+    <div class="container">
+      <a class="navbar-brand" href="#"> <img class="logo" src="./assets/img/logo.png" alt=""></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="mx-auto"></div>
+          <ul class="navbar-nav">
+
+            <div class="dropdown">
+              <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                EVENTOS
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Proximos Eventos</a></li>
+                <li><a class="dropdown-item" href="#">Conciertos</a></li>
+                <li><a class="dropdown-item" href="#">Deportes</a></li>
+                <li><a class="dropdown-item" href="#">Conferencias</a></li>
+              </ul>
+            </div>
+
+            <li class="nav-item">
+              <a  class="nav-text" href="#">CONTACTO</a>
+            </li>
+
+            <div class="dropdown">
+              <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                AYUDA
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Manual de Usuario</a></li>
+              </ul>
+            </div>
+
+            <li class="nav-item">
+                <button class="boton" type="button">INICIAR SESION</button>
+            </li>
+            <li class="nav-item">
+                <button class="boton" type="button">REGISTRATE</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+  </nav>
+  
+
+  <div
+    class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
+    <div class="content text-center">
+      <h1 class="text-white" id="title">RESERVA TU <br> ENTRADA PARA <span class="dynamic-text">EVENTOS</span></h1>
+      <span class="static-text">Emisión de boletos segura y confiable. ¡Su boleto para entretenimiento en vivo!</span>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="hero__wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+      style="height: 100%; width: 100%;">
+      <path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z"
+      style="stroke: none; fill: #05113e;"></path>
+      </svg>
+    </div>
+  </header>
+
+  <main>
+
+  </main>
+
+  <script src="./scripts/js/script.js"></script>
+  <script src="https://kit.fontawesome.com/f13e65e247.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+
+</html>
