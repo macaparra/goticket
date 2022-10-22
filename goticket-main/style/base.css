@@ -99,9 +99,9 @@ body{
     width: 100%;
     border-radius: 40px;
     padding: 30px;
-    margin: 0 15px;
-    background-color: rgba(3, 0, 32, 0.64);
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    margin: 0 15px 40px;
+    background-color: rgba(13, 17, 53, 0.338);
+    box-shadow: 5px 10px 15px 5px rgba(0, 0, 0, 0.205);
 }
 .container-registro header{
     position: relative;
@@ -150,7 +150,7 @@ form.secActive .form.first{
     font-size: 16px;
     font-weight: 500;
     margin: 6px 0;
-    color: rgb(224, 224, 224);
+    color: rgb(232, 232, 232);
 }
 .container-registro form .fields{
     display: flex;
@@ -177,7 +177,7 @@ form .fields .input-field{
     font-weight: 400;
     color: rgb(242, 242, 242);
     border-radius: 20px;
-    border: 1px solid rgba(170, 170, 170, 0.475);
+    border: 1px solid rgba(170, 170, 170, 0.29);
     background-color: rgba(255, 255, 255, 0);
     padding: 0 18px;
     height: 42px;
