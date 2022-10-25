@@ -16,12 +16,11 @@ const inputs = document.querySelectorAll('#formulario input');
 const expresiones = {
 	nombre: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
 	cedula: /^\d{7,8}$/, // 7 a 8 numeros.
-	direccion: /^[a-zA-Z0-9\_\-]{4,30}$/, // Letras, numeros, guion y guion_bajo
+	direccion: /^[a-zA-ZÀ-ÿ\s]{1,30}$/, // Letras y espacios, pueden llevar acentos.
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
 	telefono: /^\d{7,15}$/, // 7 a 15 numeros.
 	password: /^.{8,20}$/, // 8 a 20 digitos.
-	ciudad: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
-	
+	ciudad: /^[a-zA-ZÀ-ÿ\s]{1,20}$/, // Letras y espacios, pueden llevar acentos.
 }
 
 const campos = {
@@ -29,9 +28,12 @@ const campos = {
 	cedula: false,
 	direccion: false,
 	correo: false,
+	nacionalidad: false,
 	telefono: false,
 	password: false,
-	ciudad: false
+	ciudad: false, 
+	genero: false,
+	fnacimiento: false
 }
 
 const validarFormulario = (e) => {
@@ -113,7 +115,7 @@ formulario.addEventListener('submit', (e) => {
 	e.preventDefault();
 
 	const terminos = document.getElementById('terminos');
-	if(campos.usuario && campos.nombre && campos.password && campos.correo && campos.telefono && terminos.checked ){
+	if(campos.nombre && campos.cedula && campos.direccion && campos.correo && campos.nacionalidad  && campos.telefono && campos.password && campos.ciudad && campos.genero && campos.fnacimiento && terminos.checked ){
 		formulario.reset();
 
 		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
